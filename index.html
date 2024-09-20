@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Minha Loja</div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+        <div class="cart-summary" id="cart-summary">
+            <span>Carrinho (0)</span>
+            <span>Total: R$ <span id="cart-total">0,00</span></span>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Bem-vindo à Nossa Loja!</h1>
+            <p>Ofertas imperdíveis em uma variedade de produtos.</p>
+            <a href="#produtos" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+    
+
+    <section id="produtos" class="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <div class="product" data-name="Produto 1" data-price="25,90">
+                <img src="./lencol-de-borracha-odonto-3775-3.jpg" alt="Produto 1">
+                <h3>Lençol de Borracha Azul - Madeitex</h3>
+                <p>R$ 25,90</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-name="Produto 2" data-price="17,99">
+                <img src="./produto-sugador-endodontico-ssplus-sss9366a-1.jpg" alt="Produto 2">
+                <h3>Sugador Endodôntico - SSPlus</h3>
+                <p>R$ 17,99
+                </p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-name="Produto 3" data-price="7,99">
+                <img src="./gesso-pedra-amarelo-tipo-3-1-kg-asf5666a.jpg" alt="Produto 3">
+                <h3>Gesso Pedra Tipo III - Asfer</h3>
+                <p>R$ 7,99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-name="Produto 4" data-price="33,90">
+                <img src="./alginato-ezact-kromm-vigodent-ds-vek4295a.jpg" alt="Produto 4">
+                <h3>Alginato Ezact Kromm - Vigodent</h3>
+                <p>R$ 33,90</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-name="Produto 5" data-price="22,99">
+                <img src="./estojo-p-aparelho-movel-c-aroma-maquira-ds-4932.jpg" alt="Produto 5">
+                <h3>Estojo para Aparelho Móvel com Aroma - Maquira</h3>
+                <p>R$ 22,99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrinho" class="cart">
+        <h2>Seu Carrinho</h2>
+        <div id="cart-items"></div>
+        <p>Total: R$ <span id="cart-total-detail">0,00</span></p>
+        <button id="checkout-btn" class="btn-checkout">Finalizar Pedido via WhatsApp</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
